@@ -1,0 +1,18 @@
+{
+        "manifest_version": 2,
+        "name": "mastdon LTL notification",
+        "version": "0.0.1",
+        "browser_action": {
+                "default_title": "LTL notification"
+        },
+        "background": {
+                "persistent": false,
+                "scripts": ["background.js"]
+        },
+        "content_scripts": [{
+                "js": [ "content.js"],
+                "matches": ["https://qiitadon.com/*"]
+        }],
+        "permissions": ["notifications","https://file.qiitadon.com/*"]
+}
+
