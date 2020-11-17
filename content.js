@@ -3,7 +3,7 @@ window.addEventListener('load',  addCallback);
 function addCallback(){
         console.log("add listener");
         console.log(document.getElementsByClassName("item-list"));
-document.getElementsByClassName("item-list")[1].addEventListener('DOMNodeInserted', nodeInsertedCallback);
+document.getElementsByClassName("item-list")[0].addEventListener('DOMNodeInserted', nodeInsertedCallback);
 }
 
 function nodeInsertedCallback(event){
